@@ -1,5 +1,28 @@
 /* styles.css */
 
+/* hero section */
+.hero {
+    background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
+
+
+
+
+
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
