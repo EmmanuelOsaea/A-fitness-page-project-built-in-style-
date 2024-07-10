@@ -96,11 +96,6 @@ header nav ul li a {
     margin: 10px;
 }
 
-.testimonial img {
-    width: 100px;
-    border-radius: 50%;
-}
-
 /* Contact form styles */
 #contactForm {
     max-width: 600px;
