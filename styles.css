@@ -85,16 +85,42 @@ header nav ul li a {
 }
 
 /* Testimonials section styles */
+
 #testimonials {
-    text-align: center;
+    background-color: #f4f4f4;
     padding: 50px 20px;
+    text-align: center;
 }
 
 .testimonial {
-    display: inline-block;
-    width: 40%;
-    margin: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.testimonial p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.testimonial p:last-child {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .background-about {
+        padding: 30px;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+}
+
+
 
 /* Contact form styles */
 #contactForm {
