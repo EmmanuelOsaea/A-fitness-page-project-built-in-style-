@@ -1,23 +1,24 @@
-// scripts.js
+const express = require('express');
+const app = express();
+const path = require('path');
+const PORT = process.env.PORT || 3000;
 
-// Form submission alert
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
-    alert('Your message has been sent successfully!');
-    this.reset(); // Reset the form fields
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(event) {
-        event.preventDefault();
+// Error handling middleware
+app.use((req, res, next) => {
+  res.status(404).send('Page not found');
+});
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something went wrong!');
+});
 
-        window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth'
-        });
-    });
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
