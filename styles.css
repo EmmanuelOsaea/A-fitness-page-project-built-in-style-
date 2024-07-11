@@ -1,69 +1,60 @@
-/*Css styles*/
 /* General styles */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica,sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* Header styles */
 header {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
+    background-color: #333;
+    color: #fff;
     padding: 10px 0;
     text-align: center;
-    position: fixed;
-   width: 100%;
-    top: 0;
-    z-index: 1000; 
 }
 
-header nav ul {
-    list-style-type: none;
+header h1 {
     margin: 0;
-    padding: 0;
 }
 
-header nav ul li {
-    display: inline;
+/* Navigation styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
     margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
     text-decoration: none;
 }
 
-/* Hero section */
-.hero {
-    background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #333;
     text-align: center;
-}
-
-.hero-content {
-    padding: 20px;
-}
-
-.hero-content h2 {
-    font-size: 3rem;
-}
-
-/* Background image for About section */
-.background-about {
-    background-image: url('osheen-turnbull-uVLBfF_wgJk-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 50px 20px;
-    color: white;
 }
 
 /* Service section styles */
@@ -71,8 +62,9 @@ header nav ul li a {
     text-align: center;
     padding: 50px 20px;
 }
-#services h2{
-    color: #ffffff;
+
+#services h2 {
+    color: #ff6666; /* Light red color */
 }
 
 .service {
@@ -101,9 +93,9 @@ header nav ul li a {
 }
 
 #testimonials h2 {
-   color: #ff6666;
-   }
-    
+    color: #ff6666; /* Light red color */
+}
+
 .testimonial {
     margin-bottom: 20px;
     padding: 20px;
@@ -114,7 +106,7 @@ header nav ul li a {
 
 .testimonial p {
     font-size: 1.2em;
-    color:    #ffffff;
+    color: #ffffff;
 }
 
 .testimonial p:last-child {
@@ -122,47 +114,27 @@ header nav ul li a {
     margin-top: 10px;
 }
 
+/* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .background-about {
-        padding: 30px;
+    .service {
+        display: block;
+        margin: 20px 0;
     }
 
     .testimonial {
         padding: 15px;
     }
-}
 
-/* Contact form styles */
-#contactForm {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color:  #494F55;
-    border-radius: 8px;
-}
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
 
-#contactForm label,
-#contactForm input,
-#contactForm textarea {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-}
+    nav a {
+        margin: 10px 0;
+    }
 
-#contactForm button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 4px;
-}
-
-/* Footer styles */
-footer {
-    background-color: #000;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+    .container {
+        padding: 10px;
+    }
 }
