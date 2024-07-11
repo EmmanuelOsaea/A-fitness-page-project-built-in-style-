@@ -1,22 +1,4 @@
-/* styles.css */
-
-/* hero section */
-.hero {
-    background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-size: 3rem;
-}
-
+/*Css styles*/
 /* General styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -49,6 +31,27 @@ header nav ul li a {
     text-decoration: none;
 }
 
+/* Hero section */
+.hero {
+    background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
 /* Background image for About section */
 .background-about {
     background-image: url('osheen-turnbull-uVLBfF_wgJk-unsplash.jpg');
@@ -67,21 +70,22 @@ header nav ul li a {
 
 .service {
     display: inline-block;
-    widaa10px;
+    margin: 0 20px;
 }
 
 .service img {
-width: 100%; /* This makes the image take up the full width of its container */
-  max-width: 300px; /* Adjust this value to your desired maximum width */
-  height: auto; /* This maintains the aspect ratio of the image */
-  display: block; /* Ensures proper alignment */
-  margin: 0 auto; /* Centers the image horizontally */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-    
+.service p {
+    margin-top: 10px;
+}
 
 /* Testimonials section styles */
-
 #testimonials {
     background-color: #f4f4f4;
     padding: 50px 20px;
@@ -115,8 +119,6 @@ width: 100%; /* This makes the image take up the full width of its container */
         padding: 15px;
     }
 }
-
-
 
 /* Contact form styles */
 #contactForm {
