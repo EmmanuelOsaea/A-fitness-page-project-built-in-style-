@@ -2,7 +2,7 @@
 
 /* hero section */
 .hero {
-    background-image: url('anastasia-hisel-z0jN_2MQWas-unsplash.jpg');
+    background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -49,18 +49,6 @@ header nav ul li a {
     text-decoration: none;
 }
 
-/* Hero image */
-.hero-image {
-    background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
-    background-size: cover;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-}
-
 /* Background image for About section */
 .background-about {
     background-image: url('osheen-turnbull-uVLBfF_wgJk-unsplash.jpg');
@@ -79,8 +67,7 @@ header nav ul li a {
 
 .service {
     display: inline-block;
-    width: 30%;
-    margin: 10px;
+    widaa10px;
 }
 
 .service img {
