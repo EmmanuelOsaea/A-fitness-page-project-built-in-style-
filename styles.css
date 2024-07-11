@@ -100,6 +100,10 @@ header nav ul li a {
     text-align: center;
 }
 
+#testimonials h2 {
+   color: #ffffff;
+   }
+    
 .testimonial {
     margin-bottom: 20px;
     padding: 20px;
