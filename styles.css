@@ -50,12 +50,15 @@ header nav ul li a {
 }
 
 /* Hero image */
-.hero {
+.hero-image {
     background-image: url('edgar-chaparro-sHfo3WOgGTU-unsplash.jpg');
     background-size: cover;
     color: white;
     padding: 100px 0;
     text-align: center;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 
 /* Background image for About section */
@@ -81,8 +84,14 @@ header nav ul li a {
 }
 
 .service img {
-    width: 100%;
+width: 100%; /* This makes the image take up the full width of its container */
+  max-width: 300px; /* Adjust this value to your desired maximum width */
+  height: auto; /* This maintains the aspect ratio of the image */
+  display: block; /* Ensures proper alignment */
+  margin: 0 auto; /* Centers the image horizontally */
 }
+
+    
 
 /* Testimonials section styles */
 
