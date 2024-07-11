@@ -71,6 +71,9 @@ header nav ul li a {
     text-align: center;
     padding: 50px 20px;
 }
+#services h2{
+    color: #ffffff;
+}
 
 .service {
     display: inline-block;
