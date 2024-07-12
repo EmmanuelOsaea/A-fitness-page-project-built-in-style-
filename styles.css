@@ -1,18 +1,3 @@
-/* General styles */
-.pacifico-regular {
-  font-family: "Pacifico", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-black-italic {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-
-
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -22,42 +7,32 @@ body {
     flex-direction: column;
     min-height: 100vh;
     box-sizing: border-box;
-  }
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 header, section, footer {
-width: 100%;
-box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Header styles */
 .site-header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-header h1 {
     margin: 0;
-font-family: 'Pacifico', cursive; 
+    font-family: 'Pacifico', cursive;
 }
 
 .site-header nav ul {
-   list-style: none;
-   margin: 0;
-   padding: 0;
-  display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 .site-header nav ul li {
@@ -67,14 +42,6 @@ font-family: 'Pacifico', cursive;
 .site-header nav ul li a {
     color: #fff;
     text-decoration: none;
-}
-
-/* Navigation styles */
-nav {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
 }
 
 nav a {
@@ -87,101 +54,46 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Main content styles */
-main {
-    padding: 20px 0;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-section h2 {
-    color: #333;
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     text-align: center;
-   font-family: 'Pacifico', cursive;
+    background-color: #fff;
 }
 
-/* Service section styles */
-#services {
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+#about, #services, #testimonials, #contact {
+    padding: 20px;
     text-align: center;
-    padding: 50px 20px;
 }
 
-#services h2 {
-    color: #ff6666; /* Light red color */
-font-family: 'Pacifico', cursive;
-}
-
-.service {
-    display: inline-block;
-    margin: 0 20px;
+.service, .testimonial {
+    margin: 20px 0;
 }
 
 .service img {
     width: 100%;
-    max-width: 300px;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-.service p {
-    margin-top: 10px;
-    color: #ff6666;
-}
-
-/* Testimonials section styles */
-#testimonials {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#testimonials h2 {
-    color: #ff6666; /* Light red color */
-font-family: 'Pacifico', cursive;
-}
-
-.testimonial {
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.testimonial p {
-    font-size: 1.2em;
-    color: #ffffff;
-}
-
-.testimonial p:last-child {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Media queries for responsiveness */
 @media (max-width: 768px) {
-    .service {
-        display: block;
-        margin: 20px 0;
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .testimonial {
-        padding: 15px;
-    }
-
-    nav {
-        display: flex;
+    .site-header nav ul {
         flex-direction: column;
     }
 
-    nav a {
-        margin: 10px 0;
-    }
-
-    .container {
-        padding: 10px;
+    .site-header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 }
