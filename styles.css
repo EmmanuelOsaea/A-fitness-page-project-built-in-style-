@@ -128,7 +128,7 @@ nav a:hover {
 button {
     font-weight: bold;
     color: white;
-    background-color: darkgray;
+    background-color: #505050;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -136,5 +136,5 @@ button {
 }
 
 button:hover {
-    background-color: gray;
+    background-color: #8B0000;
 }
