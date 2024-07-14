@@ -123,3 +123,17 @@ nav a:hover {
         margin-bottom: 10px;
     }
 }
+
+/* Button styles */
+button {
+    font-weight: bold;
+    color: white;
+    background-color: darkgray;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: gray;
+}
