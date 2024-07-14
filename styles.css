@@ -124,6 +124,18 @@ nav a:hover {
     }
 }
 
+/* Input and Textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; /* Add margin to create space below */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 /* Button styles */
 button {
     font-weight: bold;
