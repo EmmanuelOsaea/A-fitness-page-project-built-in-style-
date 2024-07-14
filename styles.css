@@ -125,16 +125,49 @@ nav a:hover {
 }
 
 /* Input and Textarea styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
+    width: calc(100% - 20px); /* Adjust the width as needed */
     padding: 10px;
-    margin-bottom: 10px; /* Add margin to create space below */
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    display: block; /* Ensure inputs are block-level elements */
 }
+
+/* Form alignment styles */
+form {
+    max-width: 400px;
+    margin: 0 auto; /* Center the form */
+}
+
+label {
+    display: inline-block;
+    width: 100px; /* Adjust width as needed */
+    text-align: right;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 200px; /* Adjust width as needed */
+    display: inline-block;
+}
+
+textarea {
+    width: calc(100% - 120px); /* Adjust width as needed */
+    display: inline-block;
+    vertical-align: top;
+}
+
+
 
 /* Button styles */
 button {
