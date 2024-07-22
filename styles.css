@@ -147,7 +147,7 @@ button {
     cursor: pointer;
      margin: 20px;
       border-radius: 10px;
-        box-shadow: 2px 2px 5px black; /* Adjust the values to achieve the desired shadow effect */   
+      box-shadow: 2px 2px 5px black; /* Adjust the values to achieve the desired shadow effect */   
 }
 
 button:hover {
