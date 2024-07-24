@@ -123,6 +123,20 @@ nav a:hover {
         margin-bottom: 10px;
     }
 }
+/**Recent Code**/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/**Recent Code**/
+
+
 
 input[type="text"],
 input[type="email"],
