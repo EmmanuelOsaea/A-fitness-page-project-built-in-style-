@@ -1,32 +1,42 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmy's Fitness Page</title>
- <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
-<!--Just added for reduction of input field  width -->
- <style>
-        input {
-            width: 100px; /* Adjust this value to your desired width */
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <style>
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .service-image {
+            max-width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-   <header class="bg-dark text-white py-3">
-        <div class="container d-flex justify-content-between align-items-center">  
-     <h1 class="fs-3">Emmy's Fitness</h1>
-        
-     <nav>
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="fs-3">Emmy's Fitness</h1>
+            <nav>
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link text-white" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
@@ -37,20 +47,20 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-light text-center py-5">
+    <!-- Hero Image Section -->
+    <section id="home" class="text-center py-5 bg-light">
         <div class="container">
             <h2 class="display-5">Welcome to Emmy's Fitness</h2>
-            <p class="lead">Your path to an invigorating and fulfilling life begins here.</p>
-            <img src="edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="Hero Image" class="img-fluid rounded">
+            <p>Your path to an invigorating and fulfilling life begins here.</p>
+            <img src="edgar-chaparro-sHfo3WOgGTU-unsplash.jpg" alt="Hero Image" class="hero-image">
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-5 text-center bg-dark text-white">
+    <section id="about" class="text-center py-5bg-light">
         <div class="container">
             <h2>About Us</h2>
-            <p class="lead">Our aim is to enable our customers to achieve their fitness goals with professional training combined with effective nutritional plans.</p>
+            <p>Our aim is to enable our customers to achieve their fitness goals with professional training and effective nutritional plans.</p>
         </div>
     </section>
 
@@ -60,15 +70,15 @@
             <h2>Our Services</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <img src="alonso-reyes-0HlI76m4jxU-unsplash.jpg" alt="Personal Training" class="img-fluid rounded mb-3">
+                    <img src="alonso-reyes-0HlI76m4jxU-unsplash.jpg" alt="Personal Training" class="service-image">
                     <p>Personal Training</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="yulissa-tagle-2YCy6l14Opo-unsplash.jpg" alt="Group Classes" class="img-fluid rounded mb-3">
+                    <img src="yulissa-tagle-2YCy6l14Opo-unsplash.jpg" alt="Group Classes" class="service-image">
                     <p>Group Classes</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="katie-smith-uQs1802D0CQ-unsplash.jpg" alt="Nutrition Counseling" class="img-fluid rounded mb-3">
+                    <img src="katie-smith-uQs1802D0CQ-unsplash.jpg" alt="Nutrition Counseling" class="service-image">
                     <p>Nutrition Counseling</p>
                 </div>
             </div>
@@ -77,57 +87,46 @@
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-5 bg-light">
-        <div class="container text-center">
-            <h2>Testimonials</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <blockquote class="blockquote">
-                        <p>"Emmy's Fitness transformed my life!"</p>
-                        <footer class="blockquote-footer">John Bowie</footer>
-                    </blockquote>
-                </div>
-                <div class="col-md-6">
-                    <blockquote class="blockquote">
-                        <p>"I feel healthier and stronger thanks to their program."</p>
-                        <footer class="blockquote-footer">Clara Jones</footer>
-                    </blockquote>
-                </div>
+        <div class="container">
+            <h2 class="text-center">Testimonials</h2>
+            <div class="testimonial">
+                <p>"Emmy's Fitness transformed my life!"</p>
+                <p>- John Bowie</p>
+            </div>
+            <div class="testimonial">
+                <p>"I feel healthier and stronger thanks to their program."</p>
+                <p>- Clara Jones</p>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 text-center">
-        <div class="container">
+    <section id="contact" class="py-5">
+        <div class="container text-center">
             <h2>Contact Us</h2>
-            <form id="contactForm" class="row g-3 justify-content-center">
-                <div class="col-md-6">
-                    <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+            <form id="contactForm" class="w-50 mx-auto">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Emmanuel Jones" required>
                 </div>
-                <div class="col-md-6">
-                    <input type="email" id="email" name="email" class="form-control" placeholder="Your Email" required>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Rita677@gmail.com" required>
                 </div>
-                <div class="col-12">
-                    <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" class="form-control" placeholder="Put in your text here..." required></textarea>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
         </div>
     </section>
 
-
-
-
-
-
-         
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Emmy's Fitness. All rights reserved.</p>
     </footer>
-   <!-- Bootstrap JS -->
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
- <script src="main.js"></script>
 </body>
 </html>
