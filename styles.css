@@ -100,7 +100,7 @@ nav a:hover {
 }
 
 .service-image {
-    width: 100%; /* Ensures the image fills the column width */
+    width: 50%; /* Ensures the image fills the column width */
     height: 200px; /* Sets a fixed height for all images */
     object-fit: cover; /* Ensures the image is cropped proportionally to fit the height */
     border-radius: 8px; /* Optional for rounded corners */
