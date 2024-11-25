@@ -104,6 +104,8 @@ nav a:hover {
     height: 200px; /* Sets a fixed height for all images */
     object-fit: cover; /* Ensures the image is cropped proportionally to fit the height */
     border-radius: 8px; /* Optional for rounded corners */
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) {
