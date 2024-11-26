@@ -76,10 +76,7 @@ nav a:hover {
     background-color: #fff;
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
-}
+
 
 #about, #services, #testimonials, #contact {
     padding: 20px;
@@ -99,13 +96,6 @@ nav a:hover {
     margin: 20px 0;
 }
 
-.service-image {
-   max-width: 100%; /* Ensures the image fills the column width */
-    height: 200px; /* Sets a fixed height for all images */
-    object-fit: cover; /* Ensures the image is cropped proportionally to fit the height */
-    border-radius: 8px; /* Optional for rounded corners */
-    margin: 0 auto;
-}
 
 @media (max-width: 768px) {
     .site-header {
